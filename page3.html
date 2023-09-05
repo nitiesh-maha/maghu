@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Animations</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS for better organization -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff94b2, #ffd4e5); /* Pink gradient background */
+            margin: 0;
+            overflow: hidden; /* Hide overflow for full-screen effect */
+        }
+        
+        .love-animation-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack elements vertically */
+            height: 100vh;
+        }
+
+        .love-animation {
+            font-size: 48px;
+            animation: loveAnimation 3s ease infinite; /* Apply the animation */
+            margin: 10px;
+        }
+
+        /* Define animation keyframes */
+        @keyframes loveAnimation {
+            0%, 100% {
+                color: #ff0066; /* Pink text color */
+                transform: scale(1);
+            }
+            50% {
+                color: #33cc33; /* Green text color */
+                transform: scale(1.1);
+            }
+        }
+
+        /* Define styles for the message */
+        .love-message {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Love animations -->
+    <div class="love-animation-container">
+        <div class="love-animation">❤️</div>
+        <div class="love-animation">❤️</div>
+        <!-- Add more love animations with different class names and variations -->
+        <div class="love-message">I LOVE YOU MAGHU 🐭</div>
+    </div>
+</body>
+</html>

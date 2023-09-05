@@ -1,0 +1,22 @@
+/* Add love animations for the title */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Apply the heartbeat animation to the h1 element */
+h1 {
+    animation: heartbeat 2s ease-in-out infinite;
+}
+
+/* Style for love emojis */
+.emoji {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Add more custom styles as needed for your page */
